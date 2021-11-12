@@ -1,0 +1,5 @@
+.container {
+  margin: 0 auto;
+  box-shadow: var(--shadow-4);
+  overflow: hidden;
+}

@@ -1,0 +1,62 @@
+.container {
+  background: var(--lightGrey);
+  padding: 60px 0 100px;
+  position: relative;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.title > p {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 350px 350px 350px 350px;
+  gap: 30px;
+  justify-content: center;
+}
+
+.cardContainer {
+  background-color: var(--white);
+  box-shadow: var(--shadow-3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 400px;
+  width: 100%;
+  position: relative;
+}
+
+.cardContainer > h4 {
+  --h4: var(--h3);
+}
+
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 30px;
+  line-height: 2rem;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+}
+
+.card:hover {
+  opacity: 1;
+}
+
+/* Stolen from 🐻 https://codepen.io/jh3y/pen/poEvKxo */
